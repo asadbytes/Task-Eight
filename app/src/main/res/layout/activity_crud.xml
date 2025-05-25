@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtClientType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Client: Manual"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST" />
+
+    <Button
+        android:id="@+id/btnPut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PUT" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE" />
+
+    <TextView
+        android:id="@+id/txtResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Response will appear here"
+        android:textSize="16sp"
+        android:paddingTop="20dp" />
+</LinearLayout>
