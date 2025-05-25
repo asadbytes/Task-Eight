@@ -12,6 +12,7 @@ import org.json.JSONObject
 class ManualApiService : ApiService {
 
     private val baseUrl = "https://httpbin.org"
+
     override suspend fun getUsers(): ApiResult<HttpBinResponse> = withContext(Dispatchers.IO) {
         val conn = NetworkUtils.getHttpURLConnection("$baseUrl/get", "GET")
         val responseText = NetworkUtils.readResponse(conn)

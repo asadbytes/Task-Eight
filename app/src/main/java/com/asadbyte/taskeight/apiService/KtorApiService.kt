@@ -14,7 +14,9 @@ import io.ktor.http.ContentType
 import io.ktor.http.contentType
 
 class KtorApiService(private val client: HttpClient) : ApiService {
+
     private val baseUrl = "https://httpbin.org"
+
     override suspend fun getUsers(): ApiResult<HttpBinResponse> {
         val response = client.get("$baseUrl/get")
         val status = response.status.value
